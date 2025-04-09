@@ -146,7 +146,7 @@ const student = {
     }
 }
 
-console.log(student.greetings())
+console.log(student.greet())
 ```
 
 ---
