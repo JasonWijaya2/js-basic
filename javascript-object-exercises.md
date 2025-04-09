@@ -133,7 +133,20 @@ Add a method called `greet` inside `person` object that returns:
 Then call it.
 
 ```javascript
-// your code here
+const student = {
+    name: "Alice",
+    grade: 90,
+    address: {
+        city: "Jakarta",
+        country: "Indonesia",
+    },
+
+    greetings() {
+        return `Hi, my name is ${this.name}`
+    }
+}
+
+console.log(student.greetings())
 ```
 
 ---
