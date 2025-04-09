@@ -75,7 +75,7 @@ fruits.shift();
 Print how many items are in the `fruits` array.
 
 ```javascript
-// your code here
+console.log(fruits.length)
 ```
 
 ---
