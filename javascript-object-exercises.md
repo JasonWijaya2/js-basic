@@ -32,7 +32,14 @@ Use `console.log` to display:
 - The person's job
 
 ```javascript
-// your code here
+const person = {
+    name: "John",
+    age: 25,
+    job: "Developer",
+}
+
+console.log(person.name)
+console.log(person.job)
 ```
 
 ---
