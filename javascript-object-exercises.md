@@ -51,10 +51,12 @@ Add a new property called `hobby` with value `"Reading"` to the `person` object.
 ```javascript
 const person = {
     name: "John",
-    age: 25,
+    age: 30,
     job: "Developer",
-    hobby: "Reading",
 }
+
+Object.defineProperty(person, "hobby", {value:"Reading"});
+console.log(person.hobby)
 ```
 
 ---
