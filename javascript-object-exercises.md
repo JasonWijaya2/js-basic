@@ -141,7 +141,7 @@ const student = {
         country: "Indonesia",
     },
 
-    greetings() {
+    greet() {
         return `Hi, my name is ${this.name}`
     }
 }
