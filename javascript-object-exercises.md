@@ -49,7 +49,12 @@ console.log(person.job)
 Add a new property called `hobby` with value `"Reading"` to the `person` object.
 
 ```javascript
-// your code here
+const person = {
+    name: "John",
+    age: 25,
+    job: "Developer",
+    hobby: "Reading",
+}
 ```
 
 ---
