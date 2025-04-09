@@ -66,7 +66,14 @@ console.log(person.hobby)
 Change the `age` of `person` to `30`.
 
 ```javascript
-// your code here
+const person = {
+    name: "John",
+    age: 25,
+    job: "Developer",
+}
+
+Object.defineProperty(person, "age", {value:30});
+console.log(person.age)
 ```
 
 ---
