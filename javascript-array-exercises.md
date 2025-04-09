@@ -109,7 +109,7 @@ Convert the `fruits` array to a single string separated by commas.
 Example output → `"Apple,Banana,Orange"`
 
 ```javascript
-// your code here
+fruits.toString()
 ```
 
 ---
