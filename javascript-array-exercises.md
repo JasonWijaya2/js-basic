@@ -87,7 +87,7 @@ Check if `"Banana"` exists in the `fruits` array.
 Expected output → `true` or `false`
 
 ```javascript
-console.log(fruits.includes("Banana"))
+fruits.includes("Banana")
 ```
 
 ---
@@ -97,7 +97,7 @@ console.log(fruits.includes("Banana"))
 Find the index of `"Orange"` in the `fruits` array.
 
 ```javascript
-// your code here
+fruits.indexOf("Orange")
 ```
 
 ---
