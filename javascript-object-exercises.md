@@ -55,7 +55,7 @@ const person = {
     job: "Developer",
 }
 
-Object.defineProperty(person, "hobby", {value:"Reading"});
+person.hobby = "Reading"
 console.log(person.hobby)
 ```
 
@@ -72,7 +72,7 @@ const person = {
     job: "Developer",
 }
 
-Object.defineProperty(person, "age", {value:30});
+person.age = 30
 console.log(person.age)
 ```
 
@@ -139,13 +139,12 @@ const student = {
     address: {
         city: "Jakarta",
         country: "Indonesia",
-    },
-
-    greet() {
-        return `Hi, my name is ${this.name}`
     }
 }
 
+student.greet = function() {
+    return `Hi, my name is ${this.name}`
+}
 console.log(student.greet())
 ```
 
