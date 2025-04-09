@@ -83,7 +83,14 @@ console.log(person.age)
 Remove the `job` property from the `person` object.
 
 ```javascript
-// your code here
+const person = {
+    name: "John",
+    age: 25,
+    job: "Developer",
+}
+
+delete person.job
+console.log(person.job)
 ```
 
 ---
