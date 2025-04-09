@@ -18,7 +18,11 @@ Create an object called `person` with these properties:
 ```javascript
 // your code here
 ```
-
+const person = {
+    name: "John",
+    age: 25,
+    job: "Developer",
+}
 ---
 
 ## 2. Access Object Properties
