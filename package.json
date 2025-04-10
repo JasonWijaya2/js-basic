@@ -1,0 +1,23 @@
+{
+  "name": "js-basic",
+  "version": "1.0.0",
+  "main": "exercise.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JasonWijaya2/js-basic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JasonWijaya2/js-basic/issues"
+  },
+  "homepage": "https://github.com/JasonWijaya2/js-basic#readme",
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
