@@ -1,7 +1,7 @@
 const calculateTotal = require('./exercise')
 
 describe("calculateTotal", () => {
-    it("Total = 5,000 + 6,000 = 11,000", () => {
+    it("Expected Output: 11000", () => {
         // Given
         const vehicleType = "car"
         const duration = 3
@@ -15,7 +15,7 @@ describe("calculateTotal", () => {
         expect(result).toBe(expectedResult)
     })
 
-    it("Total = 2,000", () => {
+    it("Expected Output: 2000", () => {
         // Given
         const vehicleType = "bike"
         const duration = 1
@@ -29,7 +29,7 @@ describe("calculateTotal", () => {
         expect(result).toBe(expectedResult)
     })
 
-    it("Total = 5,000 + 78,000 + 50,000 = 133,000", () => {
+    it("Expected Output: 133000", () => {
         // Given
         const vehicleType = "car"
         const duration = 27
@@ -43,21 +43,29 @@ describe("calculateTotal", () => {
         expect(result).toBe(expectedResult)
     })
 
-    // it("Error: Invalid vehicle type", () => {
-    //     // Given
-    //     const vehicleType = "plane"; // Invalid vehicle type
-    //     const duration = 5;
+    it("Expected Result: Invalid vehicle type", () => {
+        // Given
+        const vehicleType = "plane"; // Invalid vehicle type
+        const duration = 5;
 
-    //     // When/Then
-    //     expect(() => calculateTotal(vehicleType, duration)).toThrow("Error: Vehicle Type not found");
-    // });
+        //When
+        const result = calculateTotal(vehicleType, duration)
 
-    // it("Error: Invalid duration", () => {
-    //     // Given
-    //     const vehicleType = "car";
-    //     const duration = -5;
+        //Then
+        const expectedResult = "Invalid vehicle type"
+        expect(result).toBe(expectedResult)
+    });
 
-    //     // When/Then
-    //     expect(() => calculateTotal(vehicleType, duration)).toThrow("Error: Invalid duration");
-    // });
+    it("Expected Result: Invalid duration", () => {
+        // Given
+        const vehicleType = "car";
+        const duration = -5;
+
+        //When
+        const result = calculateTotal(vehicleType, duration)
+
+        //Then
+        const expectedResult = "Invalid duration"
+        expect(result).toBe(expectedResult)
+    });
 })

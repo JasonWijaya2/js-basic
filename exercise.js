@@ -14,7 +14,14 @@ const pricing = {
 function calculateTotal(vehicleType, duration) {
     let oneDay = 24
     const vehiclePricing = pricing[vehicleType.toLowerCase()];
-    if (duration <= 1) {
+
+    if (!vehiclePricing) {
+        return "Invalid vehicle type"
+    }
+
+    if (duration <= 0) {
+        return "Invalid duration"
+    } else if (duration <= 1) {
         return vehiclePricing.firstHour;
     } else if (duration <= oneDay) {
         return vehiclePricing.firstHour + ((duration - 1) * vehiclePricing.nextHour);
